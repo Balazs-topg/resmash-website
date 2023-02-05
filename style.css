@@ -24,29 +24,36 @@ body {
     --headerHeight: 100px;
 }
 
-
 html{
     font-family: 'Chivo';
 }
+body > .wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
 
 h1 {
     font-weight: 700;
     font-size: 4rem;
+    position: relative;
+    z-index: 10;
 }
 
 header {
     z-index: 10;
+    position: fixed;
 
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    position: fixed;
 
     font-size: 1rem;
     font-weight: 700;
     color: white;
 
     height: var(--headerHeight);
-    position: fixed;
     width: 100vw;
     background-color: #3d5a8075;
 
@@ -72,10 +79,28 @@ header > div:first-child{
     padding-top: 100px;
     height: calc(97vh - var(--headerHeight));
 
-    background: #ffffff url("images/background.jpg") no-repeat left top;
-    background-size: cover;
+    transform-style: preserve-3d;
 }
 
+.first-page > .background {
+
+    margin-top: -100px;
+    height: 100%;
+    width: 100%;
+
+    transform: translateZ(-5px) scale(1.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+
+    background: #ffffff url("images/background.jpg") no-repeat left top;
+    background-size: cover;
+
+    z-index: -1;
+}
 
 .first-page > .text{
     padding-left: 20px;
@@ -96,7 +121,9 @@ header > div:first-child{
 }
 
 .first-page > .text > .leftside > p {
+    position: relative;
     z-index: 2;
+
     margin-left: 20px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -147,10 +174,16 @@ header > div:first-child{
     bottom: 350px;
     opacity: 0.1;
     z-index: 1;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .second-page{
-    padding-top: 50px;
+    padding-top: 90px;
 
     height: 100vh;
     width: 100%;
@@ -165,7 +198,7 @@ header > div:first-child{
 .second-page > .container{
     height: 100%;
     display: flex;
-    gap: 10px;
+    gap: 50px;
 }
 
 .second-page > .container> *{
