@@ -285,6 +285,7 @@ header > div:first-child{
 
 .third-page {
     width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,8 +307,8 @@ header > div:first-child{
     text-align: center;
 }
 
-.timeline{
-    width: 800px;
+.timeline {
+    width: 100%;
     margin-top: 80px;
     padding-bottom: 160px;
 
@@ -360,7 +361,7 @@ header > div:first-child{
     gap: 0px;
 }
 
-.timeline-item-container > *{
+.timeline-item-container .timeline-items{
     width: 400px;
     height: 133px;
 
@@ -376,16 +377,19 @@ header > div:first-child{
 
     transition: transform 300ms ease;
 }
-.timeline-item-container > *:hover{
+.timeline-item-container .timeline-items p:hover{
     transform: translateY(-6px);
+}
+
+.timeline-item-container .number{
+    display: none;
 }
 
 
 /*
 Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
 */
-
-.timeline-item-container > *:nth-child(even){
+.timeline-items:nth-child(even){
     margin-left: 500px;
     border-radius: 0px 20px 20px 20px;
 }
@@ -447,7 +451,7 @@ footer .hours .flex-container{
         margin-left: 0px;
     }
     .first-page > .background {
-        background-position-x: -100px;
+        background-position-x: 20%;
     }
 }
 
@@ -455,5 +459,55 @@ footer .hours .flex-container{
     .second-page > .container{
         flex-direction: column;
 
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .timeline-item-container > *:nth-child(even){
+        margin-left: 0px;
+        border-radius: 0px 20px 20px 20px;
+    }
+    .timeline-item-container > *:nth-child(odd){
+        margin-left: 0px;
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline-item-container {
+        position:relative;
+        gap: 20px;
+    }
+
+    .timeline-item-container .timeline-items{
+        width: 100%;
+        height: auto;
+    }
+
+    .timeline{
+        flex-shrink: 1;
+        padding: 50px;
+
+        margin-top: 0px;
+        padding-bottom: 160px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .timeline-line > * {
+        margin-bottom: 120px;
+    }
+    .timeline-line{
+        display: none;
+    }
+
+    .timeline-item-container .timeline-items p:hover{
+        transform: translateY(0px);
+    }
+    .timeline-item-container .number{
+        display: inline;
+    }
+    .number{
+        color: #ee6c4d;
+        font-weight: 700;
     }
 }
