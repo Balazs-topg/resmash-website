@@ -94,6 +94,7 @@ header > div:first-child{
     /* images/background.jpg */
     background: #3d5a80 url("images/background2.webp") no-repeat left top;
     background-size: cover;
+    background-position: left;
 
     z-index: -1;
 }
@@ -445,11 +446,14 @@ footer .hours .flex-container{
         justify-content: center;
         margin-left: 0px;
     }
+    .first-page > .background {
+        background-position-x: -100px;
+    }
 }
 
-@media screen and (max-width: 600px) {
-    .first-page > .text > .leftside{
+@media screen and (max-width: 650px) {
+    .second-page > .container{
+        flex-direction: column;
 
     }
-
 }
