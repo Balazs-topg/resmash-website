@@ -1,24 +1,31 @@
+//* Header animations and edits
 const root = document.querySelector(":root");
 const body = document.querySelector(".wrapper");
+//~ scroll animation
 body.onscroll = function() {scrollFunction()};
 function scrollFunction() {
+    //when scrolled 50px
     if (body.scrollTop > 50) {
         root.style.setProperty('--headerColor', "#3d5a8075");
         root.style.setProperty('--headerBlur', "10px");
         root.style.setProperty("--headerShadowClr", "#00000042")
     }
+    //when top
     else {
         root.style.setProperty('--headerColor', "#3d5a8000");
         root.style.setProperty('--headerBlur', "0px");
         root.style.setProperty("--headerShadowClr", "rgba(0, 0, 0, 0)")
     }
 }
-
+//~ burgir
+const burgirButtonMenu = document.querySelector(".burgir-menue")
 const burgirButton = document.querySelector(".burgir");
 const burgirContent = document.querySelector(".burgir-content")
+burgirButtonMenu.addEventListener("click", function() {burgirFunc()});
 burgirButton.addEventListener("click", function() {burgirFunc()});
 function burgirFunc(){
     console.log("burgir was pressed")
     burgirContent.classList.toggle("hidden")
+    body.classList.toggle("hidden")
 }
 
