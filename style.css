@@ -15,6 +15,7 @@
 
 :root{
     --headerHeight: 80px;
+    --construnction-tag-height: 30px;
 
     --color1: #3d5a8075;
     --color2:  #98c1d9;
@@ -46,6 +47,19 @@ Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
 
     height: 100vh;
     width: 100vw;
+}
+
+.construction-tag{
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    width: 100%;
+    height: var(--construnction-tag-height);
+    color: white;
+    background-color: #ef4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menue-header{
@@ -103,7 +117,7 @@ h1 {
 header {
     z-index: 20;
     position: sticky;
-    top: 0;
+    top: var(--construnction-tag-height);
 
     -webkit-backdrop-filter: blur(var(--headerBlur));
     backdrop-filter: blur(var(--headerBlur));
@@ -132,8 +146,6 @@ header > *:last-child{
     display: none;
     cursor: pointer;
 }
-
-
 
 header > * {
     display: flex;
