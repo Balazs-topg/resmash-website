@@ -10,7 +10,7 @@
 }
 
 ::selection{
-    background-color: #ee6d4d92;
+    background-color: #fb923c;
 }
 
 :root{
@@ -237,8 +237,8 @@ header > div:first-child{
     position: relative;
     z-index: 2;
 
-    background: rgb(222,103,62);
-    background: linear-gradient(81deg, rgba(222,103,62,1) 0%, rgba(238,108,64,1) 51%, rgba(247,166,139,1) 100%);            
+    background: #fb923c;
+    border-top: 1px solid #fed7aa;          
     margin-top: 15px;
 
     font-size: 1rem;
@@ -286,16 +286,15 @@ header > div:first-child{
     top: -38px;
     z-index: 0;
 
-    border-left: width;
-
     display: flex;
     justify-content: center;
 }
 
 
 .bar{
+    border-top: 2px solid white;
     height: 100px;
-    background-color: white;
+    background: #f1f5f9;
     width: 1000px;
     flex-grow: 1;
     transform: translateY(1.2px)
@@ -304,7 +303,7 @@ header > div:first-child{
     clip-path: polygon(0 100%, 0 0, 100% 100%);
     width: 80px;
     height: 100%;
-    background-color: white;
+    background: #f1f5f9;
     transform: translateY(1px) translateX(-1px);
 }
 
@@ -312,12 +311,12 @@ header > div:first-child{
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
     width: 80px;
     height: 100%;
-    background-color: white;
+    background: #f1f5f9;
     transform: translateY(1px) translateX(1px);
 }
 
 .hideshadow{
-    background-color: #ffffff;
+    background: #f1f5f9;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -327,7 +326,6 @@ header > div:first-child{
 .second-page{
     padding-top: 80px;
     width: 100%;
-    background-color: #ffffff;
 
     position: relative;
     z-index: 2;
@@ -336,6 +334,8 @@ header > div:first-child{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #f1f5f9;
+
 }
 
 .second-page .container{
@@ -380,7 +380,7 @@ header > div:first-child{
     margin-top: 30px;
     font-size: 1.75rem;
     font-weight: 700;
-    color:#ee6c4d;
+    color:#fb923c;
 
     position: relative;
     z-index: 2;
@@ -424,11 +424,10 @@ header > div:first-child{
     position: relative;
 
     /*Free Snowball Dots SVG provided by SVGeez.com - CC 4.0 License - © 2019 Megan Young */
-    background-color:white;
+    background-color: #f1f5f9;
     background-position-y: 100px;
     background-repeat:repeat;
     background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' fill-opacity='0.04' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st0{fill:rgba(0,0,0,1)} %3C/style%3E%3Ccircle class='st0' cx='87.5' cy='46.5' r='8.5'/%3E%3Ccircle class='st0' cx='94.5' cy='124.5' r='15.5'/%3E%3Ccircle class='st0' cx='244.5' cy='91.5' r='21.5'/%3E%3Ccircle class='st0' cx='348.5' cy='80.5' r='7.5'/%3E%3Ccircle class='st0' cx='155' cy='356' r='10'/%3E%3Ccircle class='st0' cx='422' cy='139' r='14'/%3E%3Ccircle class='st0' cx='123' cy='251' r='6'/%3E%3Ccircle class='st0' cx='280' cy='204' r='11'/%3E%3Ccircle class='st0' cx='315' cy='311' r='11'/%3E%3Ccircle class='st0' cx='262' cy='411' r='6'/%3E%3Ccircle class='st0' cx='455.5' cy='395.5' r='12.5'/%3E%3Ccircle class='st0' cx='432' cy='500' r='25'/%3E%3Ccircle class='st0' cx='432' r='25'/%3E%3Ccircle class='st0' cx='-3.5' cy='240.5' r='10.5'/%3E%3Ccircle class='st0' cx='496.5' cy='240.5' r='10.5'/%3E%3Ccircle class='st0' cx='96' cy='437' r='3'/%3E%3C/svg%3E");
-    
 }
 
 .third-page h4 {
@@ -463,10 +462,10 @@ header > div:first-child{
     height: 33px;
     margin-bottom: 100px;
 
-    color: #ee6c4d;
+    color: #fb923c;
     background-color: #ffffff;
     box-sizing: border-box;
-    border: 4px solid #283b54;
+    border: 4px solid #334155;
 
     border-radius: 40%;
 
@@ -498,14 +497,15 @@ header > div:first-child{
 
     font-size: 1rem;
     line-height: 2rem;
+    border-top: 1px solid white;
 
     font-weight: 400;
 
     box-sizing: border-box;
-    background-color: #eaecf0;
+    background-color: #e2e8f0;
     border-radius: 20px 0px 20px 20px;
     padding: 10px;
-
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     transition: transform 300ms ease;
 }
 .timeline-item-container .timeline-items:hover{
@@ -537,7 +537,7 @@ footer{
     justify-content: center;
 
     color: white;
-    background-color: #283b54;
+    background-color: #334155;
 }
 
 footer h6 {
