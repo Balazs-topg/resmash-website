@@ -237,6 +237,8 @@ header > div:first-child{
     position: relative;
     z-index: 2;
 
+    cursor: pointer;
+
     background: #fb923c;
     border-top: 1px solid #fed7aa;          
     margin-top: 15px;
@@ -463,7 +465,7 @@ header > div:first-child{
     margin-bottom: 100px;
 
     color: #fb923c;
-    background-color: #ffffff;
+    background-color: white;
     box-sizing: border-box;
     border: 4px solid #334155;
 
@@ -515,7 +517,6 @@ header > div:first-child{
 .timeline-item-container .number{
     display: none;
 }
-
 
 /*
 Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241

@@ -29,3 +29,24 @@ function burgirFunc(){
     body.classList.toggle("hidden")
 }
 
+
+const bookCallBtn = document.querySelector(".book-call")
+bookCallBtn.addEventListener("click", () => {
+    body.scrollTo({
+        top: 2000,
+        behavior: 'smooth'
+      });
+})
+const learnMore = document.querySelector(".learn-more")
+learnMore.addEventListener("click", () => {
+    body.scrollTo({
+        top: 1200,
+        behavior: 'smooth'
+      });
+})
+
+
+body.addEventListener("scroll", () => {
+    console.log(body.scrollTop)
+})
+// This is how we operate: 1200
