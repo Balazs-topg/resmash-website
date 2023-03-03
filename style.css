@@ -15,12 +15,12 @@
 
 :root{
     --headerHeight: 80px;
-    --construnction-tag-height: 30px;
+    --construnction-tag-height: 45px;
 
     --color1: #3d5a8075;
     --color2:  #98c1d9;
     --color3: #e0fbfc;
-    --color4: #ee6c4d;
+    --color4: #fb923c;
     --color5: #293241;
 
     --headerColor: #3d5a8000;
@@ -60,6 +60,7 @@ Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .menue-header{
@@ -291,22 +292,20 @@ header > div:first-child{
     justify-content: center;
 }
 
-.arrow-container > * {
-    transform: scale(1.001);
-}
 
 .bar{
-    height: 100%;
+    height: 100px;
     background-color: white;
-    width: 100vw;
+    width: 1000px;
     flex-grow: 1;
+    transform: translateY(1.2px)
 }
-
 .left-triangle{
     clip-path: polygon(0 100%, 0 0, 100% 100%);
     width: 80px;
     height: 100%;
     background-color: white;
+    transform: translateY(1px) translateX(-1px);
 }
 
 .right-triangle{
@@ -314,6 +313,7 @@ header > div:first-child{
     width: 80px;
     height: 100%;
     background-color: white;
+    transform: translateY(1px) translateX(1px);
 }
 
 .hideshadow{
