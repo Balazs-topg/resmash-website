@@ -238,6 +238,7 @@ header > div:first-child{
     z-index: 2;
 
     cursor: pointer;
+    user-select: none; /* Standard */
 
     background: #fb923c;
     border-top: 1px solid #fed7aa;          
@@ -433,6 +434,7 @@ header > div:first-child{
 }
 
 .third-page h4 {
+    scroll-margin: 150px;
     font-size: 3rem;
     position: relative;
     z-index: 2;

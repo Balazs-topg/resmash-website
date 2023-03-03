@@ -29,18 +29,18 @@ function burgirFunc(){
     body.classList.toggle("hidden")
 }
 
-
-const bookCallBtn = document.querySelector(".book-call")
-bookCallBtn.addEventListener("click", () => {
-    body.scrollTo({
-        top: 2000,
+const learnMore = document.querySelector(".learn-more")
+const thisIsHowWe = document.querySelector(".this-is-how-we")
+learnMore.addEventListener("click", () => {
+    thisIsHowWe.scrollIntoView({
         behavior: 'smooth'
       });
 })
-const learnMore = document.querySelector(".learn-more")
-learnMore.addEventListener("click", () => {
-    body.scrollTo({
-        top: 1200,
+
+const footer = document.querySelector("footer")
+const bookCallBtn = document.querySelector(".book-call")
+bookCallBtn.addEventListener("click", () => {
+    footer.scrollIntoView({
         behavior: 'smooth'
       });
 })
