@@ -47,6 +47,7 @@ Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
 
     height: 100vh;
     width: 100vw;
+    user-select: none;
 }
 
 .construction-tag{
@@ -153,6 +154,11 @@ header > * {
     align-items: center;
     text-shadow: 2px 2px 5px #0000007e;
 }
+
+header > *:not(:first-child) {
+    cursor: pointer;
+}
+
 
 header > div:first-child{
     margin-right: auto;
@@ -577,6 +583,9 @@ footer .hours .flex-container{
         display: flex;
         font-size: 32px;
     }
+    header > *{
+        user-select: none;
+    }
 
     .first-page > .text > .leftside{
         flex-shrink: 1;
@@ -652,7 +661,7 @@ footer .hours .flex-container{
         display: inline;
     }
     .number{
-        color: #ee6c4d;
+        color: #fb923c;
         font-weight: 700;
     }
     footer{
