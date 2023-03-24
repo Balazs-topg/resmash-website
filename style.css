@@ -515,7 +515,7 @@ header > div:first-child{
     background-color: #e2e8f0;
     border-radius: 20px 0px 20px 20px;
     padding: 10px;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     transition: transform 300ms ease;
 }
 .timeline-item-container .timeline-items:hover{
@@ -534,6 +534,10 @@ Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
     border-radius: 0px 20px 20px 20px;
 }
 
+form > label{
+    user-select: none;
+}
+
 footer{
     width: 100%;
     padding-top: 100px;
@@ -542,11 +546,23 @@ footer{
     padding-right: 10px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
     justify-content: center;
+    align-items: center;
 
     color: white;
     background-color: #334155;
+}
+
+footer > div{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+
 }
 
 footer h6 {
