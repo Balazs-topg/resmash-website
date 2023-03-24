@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*
+    transform-style: preserve-3d;
+    */
+}
+
+::selection{
+    background-color: #fb923c;
+}
+
+:root{
+    --headerHeight: 80px;
+    --construnction-tag-height: 45px;
+
+    --color1: #3d5a8075;
+    --color2:  #98c1d9;
+    --color3: #e0fbfc;
+    --color4: #fb923c;
+    --color5: #293241;
+
+    --headerColor: #3d5a8000;
+    --headerBlur: 0px;
+    --headerShadowClr: rgba(0, 0, 0, 0);
+}
+/*
+Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
+*/
+
+.burgir-menue{
+    cursor: pointer;
+}
+
+.burgir-content.hidden{
+    display: none;
+}
+.burgir-content{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-color: #283b54;
+
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+.construction-tag{
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    width: 100%;
+    height: var(--construnction-tag-height);
+    color: white;
+    background-color: #ef4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menue-header{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2rem;
+    color: white;
+
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.burgir-content .container{
+    background-color: var(--color1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    font-size: 2.25rem;
+    color: #e0fbfc;
+    font-weight: 700;
+
+}
+
+html{
+    font-family: 'Chivo';
+    background-color: #334155;
+}
+
+header {
+    z-index: 20;
+    position: sticky;
+    top: var(--construnction-tag-height);
+
+    -webkit-backdrop-filter: blur(var(--headerBlur));
+    backdrop-filter: blur(var(--headerBlur));
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    height: var(--headerHeight);
+    width: 100%;
+
+    background-color: var(--headerColor);
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    gap: 70px;
+
+    transition: background-color 400ms ease;
+
+    box-shadow: 2px 2px 20px var(--headerShadowClr);
+}
+
+header > *:last-child{
+    display: none;
+    cursor: pointer;
+}
+
+header > * {
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 5px #0000007e;
+}
+
+header > *:not(:first-child) {
+    cursor: pointer;
+}
+
+
+header > div:first-child{
+    margin-right: auto;
+    filter: drop-shadow(2px 2px 5px #0000007e);
+}
+
+footer{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+    color: white;
+    background-color: #334155;
+}
+
+footer h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+footer p{
+    margin-left: 8px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+}
+
+footer a {
+    color: white;
+    font-family: 'Chivo';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+}
+
+footer .hours .flex-container{
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+
+    header > *:not(:first-child):not(:last-child){
+        display: none;
+    }
+    header > *:last-child{
+        display: flex;
+        font-size: 32px;
+    }
+    header > *{
+        user-select: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    footer{
+        text-align: center;
+    }
+}
+body > .wrapper {
+    height: 100vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.our-tracks{
+    background-color: #f1f5f9;
+    padding: 40px;
+}
+
+.our-tracks .upper {
+    margin-bottom: 30px;
+}
+
+.tracks-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.shop-item {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.shop-item:hover .imgholder{
+    transform: scale(1.1);
+}
+
+.imgholder {
+    transition: transform 400ms ease;
+
+    background-image: url(images/placeholder.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.shop-item > *{
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    position: absolute;
+}
