@@ -17,7 +17,7 @@ a:link, a:visited, a:hover, a:active { text-decoration: none; color: white; }
 
 :root{
     --headerHeight: 80px;
-    --construnction-tag-height: 45px;
+    --construnction-tag-height: 0px;
 
     --color1: #3d5a8075;
     --color2: #98c1d9;
@@ -682,9 +682,86 @@ footer .hours .flex-container{
     padding: 70px;
     line-height: 2rem;
     max-width: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
 }
 
 .our-courts-h{
     display: flex;
     gap: 10px;
 }
+
+.tracks-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shop-item {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop-item:hover .imgholder{
+    transform: scale(1.1);
+}
+
+.imgholder {
+    transition: transform 400ms ease;
+
+    background-image: url(images/placeholder.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.shop-item > *{
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+.notes{
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.Falun4DuoPanoramaBanor1 .imgholder{
+    background-image: url(webshop-items/images/Falun4DuoPanoramaBanor1/IMG_3676-preview.jpg);
+    background-position: center center;
+    background-size: contain;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e8f0;
+    padding-bottom: 50px;
+}
+.showcase h5 {
+    text-align: center;
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-bottom: 40px;
+}
+

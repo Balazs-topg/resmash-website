@@ -15,7 +15,7 @@
 
 :root{
     --headerHeight: 80px;
-    --construnction-tag-height: 45px;
+    --construnction-tag-height: 0px;
 
     --color1: #3d5a8075;
     --color2:  #98c1d9;

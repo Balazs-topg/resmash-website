@@ -247,6 +247,7 @@ body > .wrapper {
   width: 400px;
   display: flex;
   flex-direction: column;
+  line-height: 2rem;
 }
 
 .moreinfo{
