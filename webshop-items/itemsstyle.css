@@ -182,6 +182,7 @@ body > .wrapper {
 }
 
 .main {
+  padding: 5px;
   padding-top: 0px;
   padding-bottom: 20px;
   background-color: #f1f5f9;
