@@ -8,6 +8,8 @@
     transform-style: preserve-3d;
     */
 }
+a:link, a:visited, a:hover, a:active { text-decoration: none; color: white; }
+
 
 ::selection{
     background-color: #fb923c;
@@ -50,6 +52,7 @@ Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
     user-select: none;
 }
 
+
 .construction-tag{
     position: sticky;
     z-index: 30;
@@ -88,8 +91,12 @@ Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
     font-size: 2.25rem;
     color: #e0fbfc;
     font-weight: 700;
-
 }
+a.our-courts-bm{
+    color: #e0fbfc;
+}
+
+
 
 html{
     font-family: 'Chivo';
@@ -450,7 +457,7 @@ header > div:first-child{
 .timeline {
     width: 100%;
     margin-top: 80px;
-    padding-bottom: 160px;
+    padding-bottom: 100px;
 
     display: flex;
     flex-direction: column;
@@ -495,6 +502,7 @@ header > div:first-child{
     position:absolute;
     margin-top: 20px;
 
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -515,8 +523,7 @@ header > div:first-child{
     background-color: #e2e8f0;
     border-radius: 20px 0px 20px 20px;
     padding: 10px;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    transition: transform 300ms ease;
+filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));    transition: transform 300ms ease;
 }
 .timeline-item-container .timeline-items:hover{
     transform: translateY(-4px);
@@ -641,7 +648,7 @@ footer .hours .flex-container{
         padding: 50px;
 
         margin-top: 0px;
-        padding-bottom: 160px;
+        padding-bottom: 0px;
         flex-direction: row;
         justify-content: center;
         gap: 20px;
@@ -667,4 +674,17 @@ footer .hours .flex-container{
     footer{
         text-align: center;
     }
+}
+
+.notes{
+    font-weight: 300;
+    font-size: 1.125rem;
+    padding: 70px;
+    line-height: 2rem;
+    max-width: 1000px;
+}
+
+.our-courts-h{
+    display: flex;
+    gap: 10px;
 }

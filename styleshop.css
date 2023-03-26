@@ -124,10 +124,6 @@ header {
     box-shadow: 2px 2px 20px var(--headerShadowClr);
 }
 
-header > *:last-child{
-    display: none;
-    cursor: pointer;
-}
 
 header > * {
     display: flex;
@@ -135,15 +131,6 @@ header > * {
     text-shadow: 2px 2px 5px #0000007e;
 }
 
-header > *:not(:first-child) {
-    cursor: pointer;
-}
-
-
-header > div:first-child{
-    margin-right: auto;
-    filter: drop-shadow(2px 2px 5px #0000007e);
-}
 
 footer{
     width: 100%;
@@ -228,7 +215,6 @@ body > .wrapper {
     justify-content: center;
 }
 
-
 .shop-item {
     height: 200px;
     width: 200px;
@@ -241,6 +227,7 @@ body > .wrapper {
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .shop-item:hover .imgholder{
@@ -261,4 +248,15 @@ body > .wrapper {
     color: white;
     width: 100%;
     position: absolute;
+}
+.notes{
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.Falun4DuoPanoramaBanor1 .imgholder{
+    background-image: url(webshop-items/images/Falun4DuoPanoramaBanor1/IMG_3676-preview.jpg);
+    background-position: center center;
+    background-size: contain;
 }
