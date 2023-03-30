@@ -237,7 +237,6 @@ body > .wrapper {
 .imgholder {
     transition: transform 400ms ease;
 
-    background-image: url(images/placeholder.jpg);
     height: 100%;
     width: 100%;
 }
@@ -255,8 +254,14 @@ body > .wrapper {
     line-height: 2rem;
 }
 
-.Falun4DuoPanoramaBanor1 .imgholder{
-    background-image: url(webshop-items/images/Falun4DuoPanoramaBanor1/IMG_3676-preview.jpg);
+.imgholder{
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
+}
+
+.n1338 {
+    background-image: url(webshop-items/images/1338/IMG_3676-preview.jpg);
+}
+.n1339 {
+    background-image: url(webshop-items/images/1339/IMG_5953_2.jpg);
 }

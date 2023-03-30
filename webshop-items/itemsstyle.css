@@ -214,7 +214,7 @@ body > .wrapper {
   cursor: pointer;
   transition: transform 200ms ease;
   background-position: center center;
-  background-size:contain;
+  background-size:cover;
 }
 
 .image:hover,
@@ -294,3 +294,5 @@ body > .wrapper {
 
 
 a:link, a:visited, a:hover, a:active { text-decoration: none; }
+
+
