@@ -521,6 +521,7 @@ header > div:first-child {
     drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   transition: transform 300ms ease;
 }
+
 .timeline-item-container .timeline-items:hover {
   transform: translateY(-4px);
 }
@@ -669,6 +670,9 @@ footer .hours .flex-container {
   footer {
     text-align: center;
   }
+  .instagram-icon {
+    justify-content: center;
+  }
 }
 
 .notes {
@@ -761,4 +765,18 @@ footer .hours .flex-container {
   padding-right: 20px;
 
   margin-bottom: 40px;
+}
+
+.instagram-icon {
+  height: 25x;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transition: transform 150ms ease;
+}
+
+.instagram-icon:active {
+  transform: scale(0.9);
 }
