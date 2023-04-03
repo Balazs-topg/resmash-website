@@ -267,6 +267,9 @@ body > .wrapper {
 .n1009 {
   background-image: url(webshop-items/images/imageIsMissing.webp);
 }
+.imgUnknown {
+  background-image: url(webshop-items/images/imageIsMissing.webp);
+}
 
 .instagram-icon {
   height: 25x;
