@@ -1,0 +1,28 @@
+header {
+  background-color: #334155;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.text-container {
+  line-height: 1.5rem;
+  max-width: 800px;
+}
+
+.text-container p {
+  margin-bottom: 10px;
+}
+
+.text-container strong {
+  font-size: larger;
+}
+
+.text-container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
