@@ -146,6 +146,8 @@ header {
   padding-right: 30px;
 
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 70px;
 
   transition: background-color 400ms ease;
@@ -169,7 +171,6 @@ header > *:not(:first-child) {
 }
 
 header > div:first-child {
-  margin-right: auto;
   filter: drop-shadow(2px 2px 5px #0000007e);
 }
 
@@ -567,7 +568,6 @@ footer p {
 
 footer a {
   color: white;
-  font-family: "Chivo";
   font-size: 1rem;
   font-weight: 300;
   line-height: 2.25rem;
@@ -697,6 +697,23 @@ footer .other-links a {
 .our-courts-h {
   display: flex;
   gap: 10px;
+}
+
+.newthing-h {
+  border-top: 1px solid #fed7aa;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  background-color: #fb923c;
+  padding: 10px 30px 10px 30px;
+  border-radius: 40px;
+  transition: transform 100ms;
+}
+.newthing-h:active {
+  transform: scale(0.95);
+}
+
+.middle-part-h {
+  display: flex;
+  gap: 40px;
 }
 
 .tracks-container {
