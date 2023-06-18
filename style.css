@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700&display=swap");
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  /*
-    transform-style: preserve-3d;
-    */
-}
 a:link,
 a:visited,
 a:hover,
@@ -114,15 +106,6 @@ body > .wrapper {
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 4rem;
-  position: relative;
-  z-index: 10;
-
-  text-shadow: 2px 2px 5px #00000042;
 }
 
 header {
