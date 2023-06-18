@@ -122,6 +122,10 @@ const newthingOpenBtn = document.querySelector(".newthing-h");
 newthingOpenBtn.addEventListener("click", () => {
   openForm();
 });
+const newthingOpenBtnMb = document.querySelector(".newthing-mb");
+newthingOpenBtnMb.addEventListener("click", () => {
+  openForm();
+});
 
 /*
 let formHtml = getHtml("./form.html");
