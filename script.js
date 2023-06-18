@@ -112,6 +112,7 @@ async function openForm() {
   console.log(rangeCounterrr);
   rangeCounterrr.addEventListener("input", () => {
     spinBoxxx.value = rangeCounterrr.value;
+    Haptics.vibrate(200);
   });
   spinBoxxx.addEventListener("input", () => {
     rangeCounterrr.value = spinBoxxx.value;
