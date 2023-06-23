@@ -1,9 +1,46 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./**/*.{html,js}", "./nav.html"],
   theme: {
     extend: {
-      fontFamily: { sans: ["Chivo"] },
+      fontFamily: { sans: "Chivo" },
+      backgroundImage: {
+        racket: "url('../images/padel_racket.svg')",
+      },
+      keyframes: {
+        openMenue: {
+          "0%": { maxHeight: "0px", paddingTop: "0rem", paddingBottom: "0rem" },
+          "100%": { maxHeight: "500px", paddingTop: "1rem", paddingBottom: "1rem" },
+        },
+        closeMenue: {
+          "100%": { maxHeight: "0px", paddingTop: "0rem", paddingBottom: "0rem" },
+          "0%": { maxHeight: "500px", paddingTop: "1rem", paddingBottom: "1rem" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0%" },
+          "100%": { opacity: "100%" },
+        },
+        fadeOut: {
+          "0%": { opacity: "100%" },
+          "100%": { opacity: "0%" },
+        },
+        openForm: {
+          "0%": { opacity: "0%", scale: 0 },
+          "100%": { opacity: "100%", scale: 1 },
+        },
+        closeForm: {
+          "100%": { opacity: "0%", scale: 0 },
+          "0%": { opacity: "100%", scale: 1 },
+        },
+      },
+      animation: {
+        "open-menue": "openMenue 400ms",
+        "close-menue": "closeMenue 400ms",
+        "fade-in": "fadeIn 400ms",
+        "fade-out": "fadeOut 400ms",
+        "open-form": "openForm 400ms",
+        "close-form": "closeForm 400ms",
+      },
     },
   },
   plugins: [require("daisyui")],
