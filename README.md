@@ -6,3 +6,7 @@
 
 - HTML
 - TailwindCSS, with daisyui
+
+## TODO
+
+- [ ] Rebuild with astro
