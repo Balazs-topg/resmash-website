@@ -9,4 +9,5 @@
 
 ## TODO
 
+- [ ] Add post
 - [ ] Rebuild with astro
